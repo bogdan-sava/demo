@@ -1,3 +1,3 @@
 # demo
 
-Spring-Boot demo project
+Spring-Boot demo project for rest services
