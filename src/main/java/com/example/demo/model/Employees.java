@@ -8,12 +8,19 @@ public class Employees {
     private String jobTitle;
     private String department;
     private String businessUnit;
-    private String gender;
+
+    enum Gender {
+        MALE,
+        FEMALE
+
+    }
+
     private String ethnicity;
-    private int age;
+    private Integer age;
     private Date hireDate;
-    private float annualSalary;
-    private int bonus;
+    private Float salaryAmount;
+    private Character salaryCurrency;
+    private Integer bonus;
     private String country;
     private String city;
     private Date exitDate;
@@ -50,14 +57,6 @@ public class Employees {
         this.businessUnit = businessUnit;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
     public String getEthnicity() {
         return ethnicity;
     }
@@ -66,11 +65,11 @@ public class Employees {
         this.ethnicity = ethnicity;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -82,19 +81,27 @@ public class Employees {
         this.hireDate = hireDate;
     }
 
-    public float getAnnualSalary() {
-        return annualSalary;
+    public Float getSalaryAmount() {
+        return salaryAmount;
     }
 
-    public void setAnnualSalary(float annualSalary) {
-        this.annualSalary = annualSalary;
+    public void setSalaryAmount(Float salaryAmount) {
+        this.salaryAmount = salaryAmount;
     }
 
-    public int getBonus() {
+    public Character getSalaryCurrency() {
+        return salaryCurrency;
+    }
+
+    public void setSalaryCurrency(Character salaryCurrency) {
+        this.salaryCurrency = salaryCurrency;
+    }
+
+    public Integer getBonus() {
         return bonus;
     }
 
-    public void setBonus(int bonus) {
+    public void setBonus(Integer bonus) {
         this.bonus = bonus;
     }
 
