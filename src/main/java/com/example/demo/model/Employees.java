@@ -9,11 +9,8 @@ public class Employees {
     private String department;
     private String businessUnit;
 
-    enum Gender {
-        MALE,
-        FEMALE
+    public Gender gender;
 
-    }
 
     private String ethnicity;
     private Integer age;
@@ -103,6 +100,14 @@ public class Employees {
 
     public void setBonus(Integer bonus) {
         this.bonus = bonus;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     public String getCountry() {
